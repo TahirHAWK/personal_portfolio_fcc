@@ -6,29 +6,23 @@ body{
     --linkColorForNav: white; 
     --linkColorForAll: Navy; 
     overflow-x: hidden;
+    height:100%;
+    width:100%;
 
 }
 
-/* specifying 'Default' link color for all */
-/* unvisited link */
-    /* a:link {color: var(--linkColorForAll)} */
 
-/* visited link */
-    /* a:visited {color: var(--linkColorForAll)} */
-    
-    /* mouse over link */
-    /* a:hover {color: var(--linkColorForAll)} */
-    
-    /* selected link */
-    /* a:active{color: var(--linkColorForAll)} */
-/* link color end */
 
 header {
     top: 0;
     left: 0;
 }
 /* navbar link colors */
-
+#navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    }
 
 nav ul{
     display: flex;
@@ -48,19 +42,21 @@ nav ul li{
  display: inline-block;
  margin: 26px 95px 21px 24px;
 }
-nav ul a{
+nav ul a, footer a{
     color: white
 }
-/* a.navbar:link {color: var(--linkColorForNav);}
-a.navbar:visited {color: var(--linkColorForNav);}
-a.navbar:hover {color: var(--linkColorForNav);}
-a.navbar:active {color: var(--linkColorForNav);} */
+
 /* navbar ends here
  */
+
 .main_body {
     margin: 65px -8px 0px -8px;
     background: whitesmoke;
     /* padding: 20px 30px 20px 30px; it will go to other part, where the article is present. not image of full width */
+}
+
+#welcome-section{
+    height: 100vh;
 }
 
 .welcomeSection{
@@ -72,10 +68,19 @@ a.navbar:active {color: var(--linkColorForNav);} */
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    padding: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-position: 0 -340px;
     font-size: 22px;
     color: whitesmoke;
+    
+}
+
+@media(max-width: 1080px){
+    .welcomeSection{
+        background-position: 0 -80px;
+    }
 }
 
 .welcomeSection h1{
@@ -90,6 +95,8 @@ a.navbar:active {color: var(--linkColorForNav);} */
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* welcome section ends here */
 .whatido{
     padding: 0 0 51px 0;
 }

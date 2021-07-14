@@ -7,11 +7,11 @@
   <title>Personal Portfolio</title>
 </head>
 <body>
-  <header>
+  <header  id="navbar">
     <nav class="navbar">
       <ul>
         <li>Logo</li>
-        <a href="#home"><li>Home</li></a>
+        <a href="#welcome-section"><li>Home</li></a>
         <a href="#whatido"><li>What I do</li></a> 
         <a href="#projects"><li>Projects</li></a> 
         <a href="#contact"><li>Contact me</li></a> 
@@ -22,7 +22,7 @@
   <div class="main_body">
 
       <!-- welcome section starts here -->
-      <section class="welcomeSection" id="home">
+      <section class="welcomeSection" id="welcome-section">
            <h1>Hi there, Welcome</h1>
            <h3>This is </h3> 
            <h3>Md. Tahir Anam Tamin</h3> 
@@ -79,8 +79,9 @@
       <!-- projects section starts here -->
       <section class="projects" id="projects">
         <h2>My Projects</h2>
-        <div class="projectTiles">
-          <div class="projectImg"><img src="https://i.ibb.co/gPBBjM5/technical-documentation-page.png" alt="technical-documentation-page"></div>
+        <div class="projectTiles project-tile">
+          <div class="projectImg"><a href="https://codepen.io/tahir-anam-tamin/full/LYWmyRz"><img src="https://i.ibb.co/gPBBjM5/technical-documentation-page.png" alt="technical-documentation-page"></a>
+            </div>
           <div class="projectDescription">
             <h3>Technical Documentation Page</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda mollitia nam nulla quam sed aspernatur veniam laudantium vero eveniet voluptate, fugit iste, quibusdam debitis nesciunt quasi aut in culpa cumque?</p>
@@ -123,8 +124,10 @@
 
   <footer>
     
-    &copy; All rights reserved. Made by Md. Tahir Anam Tamin
+    &copy; All rights reserved. Made by &nbsp;  <a href="https://github.com/TahirHSTU" id="profile-link" target='_blank'> Md. Tahir Anam Tamin</a> 
 
   </footer>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
 </body>
 </html>
