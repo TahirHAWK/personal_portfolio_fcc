@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    --linkColorForNav: white; 
+    --linkColorForAll: Navy; 
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+
+}
+
+
+
+header {
+    top: 0;
+    left: 0;
+}
+/* navbar link colors */
+#navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #57637C;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: -17px;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul li{
+ display: inline-block;
+ margin: 26px 95px 21px 24px;
+}
+nav ul a, footer a{
+    color: white
+}
+
+/* navbar ends here
+ */
+
+.main_body {
+    margin: 65px -8px 0px -8px;
+    background: whitesmoke;
+    /* padding: 20px 30px 20px 30px; it will go to other part, where the article is present. not image of full width */
+}
+
+#welcome-section{
+    height: 100vh;
+}
+
+.welcomeSection{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(https://i.ibb.co/7rTZn2k/profile2.jpg); 
+    background-color: #272c3d;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: 0 -340px;
+    font-size: 22px;
+    color: whitesmoke;
+    
+}
+
+@media(max-width: 1080px){
+    .welcomeSection{
+        background-position: 0 -80px;
+    }
+}
+
+.welcomeSection h1{
+        font-size: 50px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .welcomeSection h3{
+        font-size: 30px;
+        font-family: 'Encode Sans SC', sans-serif;
+}
+.welcomeSection h2{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* welcome section ends here */
+.whatido{
+    padding: 0 0 51px 0;
+}
+.whatido h2, .projects h2, .contact h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xxx-large;
+    color: #57637C;
+    padding: 85px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card{
+    border-bottom: 10px solid #57637C;
+    border-radius: 5px;
+    margin: 34px 10px 50px 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 24rem;
+    height: 27rem;
+    background-color: rgb(209, 209, 209);
+    
+}
+
+.card img{
+    max-width: 80%;
+    max-height: 70%;
+    background-color: white;
+    border-left: 10px solid #57637C;
+    border-radius: 5px;
+    margin: -48px 29px 0 0;
+}
+
+.card img:hover, .card h3{
+    transform: scale(1.03);
+    border-right: 15px solid #57637C;
+    border-left: 0;
+    color: whitesmoke;
+}
+
+.card h3{
+    padding: 11px 100px 0 0;
+    color: #57637C;
+    
+}
+
+.card p{
+    margin: 0;
+    padding: 0 6 3 40px;
+    color: #57637C;
+    
+}
+/* projects section starts here */
+
+.projects{
+    background-color: white;
+    color: #57637C;
+}
+/* remaining part of .project h2 tag is on whatido section where same property is declared multiple selectors instead of repeating*/
+.projects h2{
+    background-color: white;
+    padding: 80px;
+}
+
+
+.projectTiles{
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
+div .projectImg img{
+    max-width: 100%;
+    
+}
+
+.projectImg .projectDescription{
+    max-width: 50%;
+    min-height: 13rem;
+}
+
+.projectDescription{
+    margin: 50px;
+}
+/* project section ends here */
+
+/* contact section starts here */
+ 
+
+/* remaining part of .project h2 tag is on whatido section where same property is declared multiple selectors instead of repeating*/
+
+.contact{
+    background-image: url(https://i.ibb.co/PmwL6cd/IMG-9255.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(197, 73, 120, 0.479);
+    background-blend-mode: darken;
+    background-position: 0;
+    padding: 30;
+    margin: 112px 0 0 0;
+}
+
+.contact_form{
+    background-color: rgba(82, 41, 57, 0.767);
+    padding: 80px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.contact_form h2{
+    color: white
+}
+
+input[type='email'], textarea, input[type='submit']{
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #926071;
+    margin: 0px 0 25px 0;
+    color: white
+}
+input[type='email']::placeholder,textarea::placeholder{
+    color: white;
+}
+input[type='submit']:hover, input[type='email']:hover, textarea:hover{
+    background-color: #6d4c57;
+    
+}
+
+textarea{
+    height: 100px;
+}
+/* contact section ends here */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 42px;
+    background-color: #57637C;
+    margin: 0px -9px -9px -10px;
+    color: white;
+}
